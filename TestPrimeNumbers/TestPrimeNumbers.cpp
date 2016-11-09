@@ -28,6 +28,7 @@ BOOST_AUTO_TEST_CASE(ResultWithNegativeBound)
 	BOOST_CHECK(emptySet.empty());
 }
 
+
 BOOST_AUTO_TEST_CASE(ResultWithNormalBound)
 {
 	set<int> testSet;
