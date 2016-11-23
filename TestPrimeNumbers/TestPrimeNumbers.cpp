@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "../PrimeNumbers/GenPrimeNum.h"
+#include <boost/test/unit_test.hpp>
 
 using namespace std;
 

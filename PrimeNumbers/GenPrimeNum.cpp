@@ -10,14 +10,16 @@ set<int> GeneratePrimeNumSet(int upBound)
 		{
 			if (primeVector[i] == false)
 			{
-				primeSet.insert(i);
-				if (i <= upBound / i)
+				
+				if (i * i < upBound)
 				{
-					for (int j = i * i; j <= upBound; j += i)
+					for (int j = i * i; j < upBound; j += i)
 					{
-						primeVector[j] = true;
+						primeVector[i] = true;
 					}
+					
 				}
+				
 			}
 		}
 	}
