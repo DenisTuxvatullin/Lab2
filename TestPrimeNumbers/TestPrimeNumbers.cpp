@@ -21,6 +21,14 @@ BOOST_AUTO_TEST_CASE(ResultWithZeroBound)
 	BOOST_CHECK(emptySet.empty());
 }
 
+BOOST_AUTO_TEST_CASE(ResultWithMaxBound)
+{
+	set<int> emptySet;
+	int upBound = 10000000000;
+	emptySet = GeneratePrimeNumSet(upBound);
+	BOOST_CHECK(emptySet.empty());
+}
+
 BOOST_AUTO_TEST_CASE(ResultWithNegativeBound)
 {
 	set<int> emptySet;
@@ -35,5 +43,5 @@ BOOST_AUTO_TEST_CASE(ResultWithNormalBound)
 	set<int> testSet;
 	int upBound = 15;
 	testSet = GeneratePrimeNumSet(upBound);
-	BOOST_CHECK(SetsAreEqual(testSet, { 2, 3, 5, 7, 11, 13 }));
+	BOOST_CHECK(SetsAreEqual(testSet, { 2, 3, 5, 7, 11, 13,}));
 }

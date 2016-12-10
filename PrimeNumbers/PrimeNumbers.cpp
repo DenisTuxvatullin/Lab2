@@ -1,20 +1,21 @@
-// PrimeNumbers.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include "GenPrimeNum.h"
+#include <stdlib.h>  
 
-int main()
+int main(int argc, char* argv[])
 {
-	cout << "Input upper bound: ";
-	int upperBound;
-	cin >> upperBound;	
+	if (argc != 2)
+	{
+		cout << "Incorrect number of param" ;
+	}
+	char* digit = argv[1];
+	int upperBound = atoi(digit);
 	set<int> primeSet = GeneratePrimeNumSet(upperBound);
 	for (auto i = primeSet.begin(); i != primeSet.end(); ++i)
 	{
 		cout << *i << " ";
 	}
+	cout << endl;
 	system("pause");
 	return 0;
 }
-
