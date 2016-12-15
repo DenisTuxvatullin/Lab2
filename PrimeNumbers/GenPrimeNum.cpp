@@ -12,7 +12,7 @@ set<int> GeneratePrimeNumSet(int upBound)
 			if (primeVector[i] == false)
 			{
 				primeSet.insert(i);		
-				if (i * 1ll * i < upBound) 
+				if (i * 1ll * i <= upBound) 
 				{
 					
 					for (int j = i * i; j <= upBound; j += i)
