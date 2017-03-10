@@ -6,5 +6,4 @@
 #include <vector>
 #include <set>
 using namespace std;
-const int maxValue = 100000000;
 std::set<int> GeneratePrimeNumSet(int upBound); 
