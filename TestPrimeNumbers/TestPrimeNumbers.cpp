@@ -24,7 +24,7 @@ BOOST_AUTO_TEST_CASE(ResultWithZeroBound)
 BOOST_AUTO_TEST_CASE(ResultWithMaxBound)
 {
 	set<int> emptySet;
-	int upBound = 10000000000;
+	int upBound = 1000000000;
 	emptySet = GeneratePrimeNumSet(upBound);
 	BOOST_CHECK(emptySet.empty());
 }
