@@ -7,6 +7,7 @@ int main(int argc, char* argv[])
 	if (argc != 2)
 	{
 		cout << "Incorrect number of param" ;
+		return 0;
 	}
 	char* digit = argv[1];
 	int upperBound = atoi(digit);
